@@ -11,7 +11,17 @@ using namespace std;
 
 int main()
 {
-    
+	const int maxList = 20;
+	int menu, nothing = 0;
+	char confirm;
+	string todo, todos[maxList] = {};
+
+	for (int i = 0; i < maxList; i++)
+	{
+		todos[i] = "";
+	}
+
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
