@@ -65,7 +65,39 @@ int main()
 		}
 
 		break;
+
 	case 2:
+		cout << "To Do list: " << endl;
+		cout << "================================" << endl;
+
+		for (int i = 0; i < maxList; i++)
+		{
+			if (todos[i] == "")
+			{
+				nothing = nothing + 1;
+			}
+		}
+
+		if (nothing != maxList)
+		{
+			for (int i = 0; i < maxList; i++)
+			{
+				if (todos[i] != "")
+				{
+					cout << i + 1 << ". " << todos[i] << endl;
+				}
+			}
+		}
+
+		else
+		{
+			cout << "Your To Do list is empty. Please insert first To Do item !" << endl;
+		}
+
+		cout << "================================" << endl;
+		cout << "Press enter to return to menu";
+		_getch();
+		break;
 
 	case 3:
 
