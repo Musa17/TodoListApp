@@ -21,7 +21,27 @@ int main()
 		todos[i] = "";
 	}
 
+	system("cls");
+	cout << "********************************" << endl;
+	cout << "|                              |" << endl;
+	cout << "|        ANTONIO MUSULIN       |" << endl;
+	cout << "|           TODO APP           |" << endl;
+	cout << "|             FESB             |" << endl;
+	cout << "|                              |" << endl;
+	cout << "********************************" << endl;
+	cout << endl;
 
+	cout << "ToDo List\n";
+	cout << "================================" << endl;
+	cout << "1. Add Todo item" << endl;
+	cout << "2. View list" << endl;
+	cout << "3. Exit" << endl;
+	cout << "================================" << endl;
+
+	cout << "Select option: ";
+	cin >> menu;
+	cout << "================================" << endl;
+	system("cls");
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
