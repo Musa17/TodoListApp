@@ -3,10 +3,15 @@
 
 #include "pch.h"
 #include <iostream>
+#include <conio.h>
+#include <sstream>
+#include <stdlib.h>
+
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+    
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
