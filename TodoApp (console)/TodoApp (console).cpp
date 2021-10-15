@@ -33,7 +33,7 @@ int main()
 
 	cout << "ToDo List\n";
 	cout << "================================" << endl;
-	cout << "1. Add Todo item" << endl;
+	cout << "1. Add To Do item" << endl;
 	cout << "2. View list" << endl;
 	cout << "3. Exit" << endl;
 	cout << "================================" << endl;
@@ -42,6 +42,36 @@ int main()
 	cin >> menu;
 	cout << "================================" << endl;
 	system("cls");
+
+	switch (menu)
+	{
+	case 1:
+		cout << "Enter your new To Do item (Press enter to save): \n";
+		cin >> todo;
+
+		cout << "\n Save ? (Y/N): ";
+		cin >> confirm;
+
+		if (confirm == 'y' || confirm == 'Y')
+		{
+			for (int i = 0; i < maxList; i++)
+			{
+				if (todos[i] == "")
+				{
+					todos[i] = todo;
+					break;
+				}
+			}
+		}
+
+		break;
+	case 2:
+
+	case 3:
+
+	default:
+		break;
+	}
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
